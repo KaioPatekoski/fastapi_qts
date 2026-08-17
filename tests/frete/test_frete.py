@@ -7,7 +7,7 @@ from app.frete.frete import classificar_frete
     [
         (0,"local", True, "Invalido"),
         (-1,"estadual", False, "Invalido"),
-        (5,"internacional", False, "regiao invalida"),
+        (5,"internacional", False, "Regiao invalida"),
         (2,"local", True, "Frete gratis"),
         (3,"local", False, "Frete reduzido"),
         (3,"estadual", False, "Frete padrão"),

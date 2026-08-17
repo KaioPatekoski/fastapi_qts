@@ -1,2 +1,16 @@
 def classificar_frete(peso_kg: float, regiao: str, premium: bool) -> str:
-    pass
+    if peso_kg <= 0:
+        return "Invalido"
+
+    regiao_limpa = regiao.strip().lower()
+
+    if regiao_limpa not in {"local","estadual","nacional"}:
+        return "Regiao invalida"
+
+    if premium:
+        return "Frete gratis"
+
+    if regiao_limpa == "local":
+        return "Frete reduzido"
+
+    return "Frete padrão"
